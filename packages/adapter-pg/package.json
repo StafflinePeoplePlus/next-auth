@@ -41,7 +41,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "peerDependencies": {
     "pg": "^8"

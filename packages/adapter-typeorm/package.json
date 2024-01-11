@@ -47,7 +47,7 @@
     "test": "tests/test.sh"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "devDependencies": {
     "mssql": "^7.2.1",

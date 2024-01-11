@@ -204,8 +204,8 @@ import { dev } from "$app/environment"
 import { base } from "$app/paths"
 import { env } from "$env/dynamic/private"
 
-import { Auth } from "@auth/core"
-import type { AuthAction, AuthConfig, Session } from "@auth/core/types"
+import { Auth } from "@auth-pp/core"
+import type { AuthAction, AuthConfig, Session } from "@auth-pp/core/types"
 
 export type {
   Account,
@@ -213,7 +213,7 @@ export type {
   Profile,
   Session,
   User,
-} from "@auth/core/types"
+} from "@auth-pp/core/types"
 
 export async function getSession(
   req: Request,

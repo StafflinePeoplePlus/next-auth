@@ -37,7 +37,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "peerDependencies": {
     "@xata.io/client": ">=0.13.0"

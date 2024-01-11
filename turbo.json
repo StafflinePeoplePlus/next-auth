@@ -19,7 +19,7 @@
       ],
       "outputMode": "new-only"
     },
-    "@auth/sveltekit#build": {
+    "@auth-pp/sveltekit#build": {
       "dependsOn": ["^build"],
       "outputs": [".svelte-kit/**", "providers/**", "client.*", "index.*"],
       "outputMode": "new-only"
@@ -71,7 +71,7 @@
         "@auth/solid-start#build",
         "@auth/supabase-adapter#build",
         "@auth/surrealdb-adapter#build",
-        "@auth/sveltekit#build",
+        "@auth-pp/sveltekit#build",
         "@auth/express#build",
         "@auth/typeorm-adapter#build",
         "@auth/unstorage-adapter#build",
@@ -105,7 +105,7 @@
         "@auth/solid-start#build",
         "@auth/supabase-adapter#build",
         "@auth/surrealdb-adapter#build",
-        "@auth/sveltekit#build",
+        "@auth-pp/sveltekit#build",
         "@auth/typeorm-adapter#build",
         "@auth/unstorage-adapter#build",
         "@auth/upstash-redis-adapter#build",

@@ -19,7 +19,7 @@
     "vite": "4.0.5"
   },
   "dependencies": {
-    "@auth/sveltekit": "workspace:*"
+    "@auth-pp/sveltekit": "workspace:*"
   },
   "type": "module"
 }

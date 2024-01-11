@@ -1,7 +1,7 @@
 import type {
   BuiltInProviderType,
   RedirectableProviderType,
-} from "@auth/core/providers"
+} from "@auth-pp/core/providers"
 import { base } from "$app/paths"
 
 type LiteralUnion<T extends U, U = string> = T | (U & Record<never, never>)

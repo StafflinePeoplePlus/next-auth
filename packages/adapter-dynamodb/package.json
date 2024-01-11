@@ -52,6 +52,6 @@
     "@shelf/jest-dynamodb": "^3.4.2"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   }
 }

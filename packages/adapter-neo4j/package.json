@@ -48,7 +48,7 @@
     "neo4j-driver": "^5.7.0"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "jest": {
     "preset": "utils/adapter"

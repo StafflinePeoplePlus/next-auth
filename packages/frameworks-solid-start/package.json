@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "devDependencies": {
     "@solidjs/meta": "^0.28.0",

@@ -42,7 +42,7 @@
     "test": "firebase emulators:exec --only firestore --project next-auth-test 'jest -c tests/jest.config.js'"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "peerDependencies": {
     "firebase-admin": "^11.4.1"

@@ -14,7 +14,7 @@
     "nuxt": "3.8.2"
   },
   "dependencies": {
-    "@auth/core": "workspace:*",
+    "@auth-pp/core": "workspace:*",
     "@hattip/adapter-node": "^0.0.35"
   }
 }

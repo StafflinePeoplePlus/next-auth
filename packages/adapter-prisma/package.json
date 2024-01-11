@@ -48,7 +48,7 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "peerDependencies": {
     "@prisma/client": ">=2.26.0 || >=3 || >=4 || >=5"

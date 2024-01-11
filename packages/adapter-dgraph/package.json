@@ -44,7 +44,7 @@
     "@types/jsonwebtoken": "^8.5.5"
   },
   "dependencies": {
-    "@auth/core": "workspace:*",
+    "@auth-pp/core": "workspace:*",
     "jsonwebtoken": "^8.5.1"
   },
   "jest": {

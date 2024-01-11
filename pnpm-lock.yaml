@@ -161,7 +161,7 @@ importers:
 
   apps/dev/sveltekit:
     dependencies:
-      '@auth/sveltekit':
+      '@auth-pp/sveltekit':
         specifier: workspace:*
         version: link:../../../packages/frameworks-sveltekit
     devDependencies:
@@ -259,7 +259,7 @@ importers:
 
   packages/adapter-azure-tables:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -269,7 +269,7 @@ importers:
 
   packages/adapter-d1:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -285,7 +285,7 @@ importers:
 
   packages/adapter-dgraph:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
       jsonwebtoken:
@@ -298,7 +298,7 @@ importers:
 
   packages/adapter-drizzle:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -329,7 +329,7 @@ importers:
 
   packages/adapter-dynamodb:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -345,7 +345,7 @@ importers:
 
   packages/adapter-edgedb:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -355,7 +355,7 @@ importers:
 
   packages/adapter-fauna:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -368,7 +368,7 @@ importers:
 
   packages/adapter-firebase:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -381,7 +381,7 @@ importers:
 
   packages/adapter-hasura:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -397,7 +397,7 @@ importers:
 
   packages/adapter-kysely:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -422,7 +422,7 @@ importers:
 
   packages/adapter-mikro-orm:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -435,7 +435,7 @@ importers:
 
   packages/adapter-mongodb:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -445,7 +445,7 @@ importers:
 
   packages/adapter-neo4j:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -458,7 +458,7 @@ importers:
 
   packages/adapter-pg:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -471,7 +471,7 @@ importers:
 
   packages/adapter-pouchdb:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -490,7 +490,7 @@ importers:
 
   packages/adapter-prisma:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -506,7 +506,7 @@ importers:
 
   packages/adapter-sequelize:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -516,7 +516,7 @@ importers:
 
   packages/adapter-supabase:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -526,7 +526,7 @@ importers:
 
   packages/adapter-surrealdb:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
       surrealdb.js:
@@ -535,7 +535,7 @@ importers:
 
   packages/adapter-typeorm:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -560,7 +560,7 @@ importers:
 
   packages/adapter-unstorage:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -576,7 +576,7 @@ importers:
 
   packages/adapter-upstash-redis:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -592,7 +592,7 @@ importers:
 
   packages/adapter-xata:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -654,7 +654,7 @@ importers:
 
   packages/frameworks-express:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
       express:
@@ -679,7 +679,7 @@ importers:
 
   packages/frameworks-solid-start:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -701,7 +701,7 @@ importers:
 
   packages/frameworks-sveltekit:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -738,7 +738,7 @@ importers:
 
   packages/next-auth:
     dependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -757,7 +757,7 @@ importers:
 
   packages/utils:
     devDependencies:
-      '@auth/core':
+      '@auth-pp/core':
         specifier: workspace:*
         version: link:../core
       '@swc/core':

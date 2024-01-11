@@ -44,7 +44,7 @@
     "test": "./tests/test.sh"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "peerDependencies": {
     "faunadb": "^4.3.0"

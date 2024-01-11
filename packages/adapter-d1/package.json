@@ -42,7 +42,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@auth/core": "workspace:*"
+    "@auth-pp/core": "workspace:*"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230321.0",
