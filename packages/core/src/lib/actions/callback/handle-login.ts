@@ -173,54 +173,8 @@ export async function handleLoginOrRegister(
       return { session, user, isNewUser }
     }
 
-    // If the user is not signed in and it looks like a new OAuth account then we
-    // check there also isn't an user account already associated with the same
-    // email address as the one in the OAuth profile.
-    //
-    // This step is often overlooked in OAuth implementations, but covers the following cases:
-    //
-    // 1. It makes it harder for someone to accidentally create two accounts.
-    //    e.g. by signin in with email, then again with an oauth account connected to the same email.
-    // 2. It makes it harder to hijack a user account using a 3rd party OAuth account.
-    //    e.g. by creating an oauth account then changing the email address associated with it.
-    //
-    // It's quite common for services to automatically link accounts in this case, but it's
-    // better practice to require the user to sign in *then* link accounts to be sure
-    // someone is not exploiting a problem with a third party OAuth service.
-    //
-    // OAuth providers should require email address verification to prevent this, but in
-    // practice that is not always the case; this helps protect against that.
-    const userByEmail = profile.email
-      ? await getUserByEmail(profile.email)
-      : null
-    if (userByEmail) {
-      const provider = options.provider as OAuthConfig<any>
-      if (provider?.allowDangerousEmailAccountLinking) {
-        // If you trust the oauth provider to correctly verify email addresses, you can opt-in to
-        // account linking even when the user is not signed-in.
-        user = userByEmail
-      } else {
-        // We end up here when we don't have an account with the same [provider].id *BUT*
-        // we do already have an account with the same email address as the one in the
-        // OAuth profile the user has just tried to sign in with.
-        //
-        // We don't want to have two accounts with the same email address, and we don't
-        // want to link them in case it's not safe to do so, so instead we prompt the user
-        // to sign in via email to verify their identity and then link the accounts.
-        throw new OAuthAccountNotLinked(
-          "Another account already exists with the same e-mail address",
-          { provider: account.provider }
-        )
-      }
-    } else {
-      // If the current user is not logged in and the profile isn't linked to any user
-      // accounts (by email or provider account id)...
-      //
-      // If no account matching the same [provider].id or .email exists, we can
-      // create a new account for the user, link it to the OAuth account and
-      // create a new session for them so they are signed in with it.
-      user = await createUser({ ...profile, emailVerified: null })
-    }
+    
+    user = await createUser({ ...profile, emailVerified: null })
     await events.createUser?.({ user })
 
     await linkAccount({ ...account, userId: user.id })
