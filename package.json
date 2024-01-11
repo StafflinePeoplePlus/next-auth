@@ -24,8 +24,7 @@
     "release": "release",
     "peek": "pnpm release --peek",
     "version:pr": "node ./config/version-pr",
-    "e2e": "turbo run e2e --filter=next-auth-app",
-    "prepare": "npm run build"
+    "e2e": "turbo run e2e --filter=next-auth-app"
   },
   "devDependencies": {
     "@actions/core": "^1.10.0",
