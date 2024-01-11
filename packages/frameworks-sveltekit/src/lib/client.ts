@@ -81,7 +81,9 @@ export async function signIn<
     }),
   })
 
-  const data = await res.clone().json()
+  const response = new Response(res.body, res)
+
+  const data = await response.json()
 
   if (redirect || !isSupportingReturn) {
     // TODO: Do not redirect for Credentials and Email providers by default in next major
